@@ -5,15 +5,21 @@
     margin: 0;
 }
 
+:root {
+    --white: #fafafa;
+    --black: #000000;
+    --font: Arial, Helvetica, sans-serif;
+}
+
 body {
     background-color: #fafafa;
 }
 
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #fafafa;
-    color: #000000;
+    font-family: var(--font);
+    background-color: gray;
+    color: var(--black);
 }
 
 header h1 {
@@ -25,7 +31,7 @@ header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font);
     font-size: 20px;
 }
 
@@ -39,4 +45,21 @@ header nav ul {
 
 header nav ul li {
     margin-left: 25px;
+}
+
+nav a {
+    color: var(--black);
+}
+
+.hero {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(../images/heroskyline.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.subtitle {
+    font-size: 20px;
 }
