@@ -89,7 +89,7 @@ nav a {
     justify-content: flex-end;
     width: 24%;
     font-size: 45px;
-    padding-right: 10px;
+    padding-right: 50px;
     border-right: solid #000000 5px;
 }
 
@@ -124,6 +124,7 @@ nav a {
     font-size: 45px;
     padding-right: 10px;
     border-right: solid 5px #000000;
+    padding-right: 50px;
 }
 
 .run-buddy {
@@ -157,7 +158,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    
+    border-right: solid 5px #000000;
 }
 
 .project2 {
@@ -201,6 +202,7 @@ nav a {
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 24%;
+    border-right: solid 5px #000000;
 }
 
 .project4 {
