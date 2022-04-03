@@ -258,3 +258,14 @@ nav a {
     width: 100%;
     padding-bottom: 100px;
 }
+
+a.rblink {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.run-buddy:hover {
+    opacity: .55;
+}
