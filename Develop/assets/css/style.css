@@ -20,11 +20,17 @@ header {
     font-family: var(--font);
     background-color: gray;
     color: var(--black);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-between;
 }
 
 header h1 {
     display: inline-block;
     font-size: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 header nav {
@@ -38,13 +44,13 @@ header nav {
 header nav ul {
     display: flex; 
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
 }
 
 header nav ul li {
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 nav a {
@@ -302,3 +308,30 @@ a.rblink {
 opacity: 0.5;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+}
